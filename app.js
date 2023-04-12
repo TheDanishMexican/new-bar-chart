@@ -9,12 +9,18 @@ const myArray = [
 
 function start() {
   console.log("js is running");
+}
 
+function displayData() {
   const bars = document.querySelectorAll(".bar");
 
-  const firstBar = bars[0];
+  for (let i = 0; i < 40; i++) {
+    const firstBar = bars[i];
 
-  const h = (myArray[22] / 32) * 100;
+    const h = (myArray[i] / 32) * 100;
 
-  firstBar.style.height = `${h}vw`;
+    firstBar.style.height = `${h}px`;
+  }
 }
+
+displayData();
