@@ -14,7 +14,7 @@ function start() {
 
   const firstBar = bars[0];
 
-  const h = 4;
+  const h = (myArray[22] / 32) * 100;
 
   firstBar.style.height = `${h}vw`;
 }
